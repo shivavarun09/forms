@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fromstyle.css" />
+  </head>
+  <body>
+    <div class="formcontainer">
+      <form action="">
+        <h2>SignUp Here</h2>
+        <input type="text" name="Username" placeholder="Username" required />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          pattern="[A-Za-z0-9._]+@[a-z0-9]+\.[a-z]{2,}"
+          required
+        />
+        <input
+          type="text"
+          name="PhoneNumber"
+          placeholder="Mobile Number"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Passward"
+          pattern="(?=.*[a-z])(?=.[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]"
+          required
+        />
+        <div class="tandc">
+           <p> <input type="checkbox" name="termsandconditions" required>I agree to Terms and Condtions  </p>
+            </div>
+        <input class="signupbtn" type="submit" value="SignUp" />
+        <p>Already have an account &excl; <a href="index.html">Login</a></p>
+      </form>
+    </div>
+  </body>
+</html>
